@@ -1,2 +1,20 @@
 // Specific CSS for your home-page
 
+.main-container {
+  margin: 5vw;
+
+  .intro-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+
+    .intro-picture {
+      border: 1px solid black;
+      width: 20vw;
+    }
+
+    .intro-text {
+      border: 1px solid black;
+    }
+  }
+}
