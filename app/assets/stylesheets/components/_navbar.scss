@@ -1,11 +1,24 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.navbar-style {
   background: $bright-green;
+  padding: 0.5%;
 
-  .a {
-    text-decoration: none;
-    color: $white;
+
+  .nav-menu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+
+    .nav-link {
+      color: $light-sand;
+      margin-right: 4vw;
+      margin-bottom: 0;
+    }
   }
+
 }
 
 // .navbar-lewagon .navbar-collapse {
