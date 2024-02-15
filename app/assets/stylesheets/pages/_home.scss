@@ -3,18 +3,35 @@
 .main-container {
   margin: 5vw;
 
-  .intro-card {
+  .about-card {
     display: flex;
     flex-direction: row;
     border: 1px solid black;
 
-    .intro-picture {
+    .about-picture {
       border: 1px solid black;
       width: 20vw;
+      height: 20vw;
     }
 
-    .intro-text {
+    .about-text {
       border: 1px solid black;
     }
+  }
+
+  .skills-icon-card {
+    display: flex;
+    flex-direction: row;
+
+    .skills-icon {
+      width: 3vw;
+      margin-inline: 1vw;
+    }
+  }
+
+  .project-preview-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
