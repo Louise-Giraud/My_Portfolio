@@ -29,9 +29,24 @@
     }
   }
 
-  .project-preview-container {
+  .project-preview-grid {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+
+    .project-preview-card {
+      border: 1px solid $red;
+      width: 30vw;
+      height: 30vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .project-preview-pic {
+        width: 25vw;
+      }
+    }
   }
 }
