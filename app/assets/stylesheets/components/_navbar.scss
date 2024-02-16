@@ -1,26 +1,33 @@
 .navbar-style {
   background: $bright-green;
-  padding: 0.5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 
+  .nav-home {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
 
-  .nav-menu {
-
+  .nav-projects-touch {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     align-content: center;
-    list-style: none;
-
+    column-gap: 4vw;
+    margin-right: 5vw;
+  }
     .nav-link {
       color: $light-sand;
-      margin-right: 4vw;
-      margin-bottom: 0;
+      // margin-right: 4vw;
+      font-size: 16px;
     }
-  }
-
 }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
