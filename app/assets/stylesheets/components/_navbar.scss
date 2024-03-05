@@ -1,26 +1,60 @@
 .navbar-style {
   background: $bright-green;
-  padding: 0.5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  .nav-home {
+    .nav-link {
+      color: $light-sand;
+      font-size: 16px;
+      text-decoration: none;
+    }
 
-  .nav-menu {
+    margin-left: 5vw;
+  }
 
+  .nav-projects-touch {
+    position: relative;
+    column-gap: 4vw;
+    margin-right: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     align-content: center;
-    list-style: none;
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      background-color: $bright-green;
+      padding: 10px;
+
+      .dropdown-content {
+        color: $light-sand;
+        font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &:hover .dropdown {
+      display: flex;
+    }
 
     .nav-link {
       color: $light-sand;
-      margin-right: 4vw;
-      margin-bottom: 0;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
     }
   }
-
 }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
