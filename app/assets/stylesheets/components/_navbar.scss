@@ -7,13 +7,18 @@
   align-items: center;
 
   .nav-home {
-    .nav-link {
-      color: $light-sand;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
     margin-left: 5vw;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: $light-sand;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      color: $dark-sand;
+    }
   }
 
   .nav-projects-touch {
@@ -32,14 +37,12 @@
       left: 0;
       display: none;
       flex-direction: column;
-      background-color: $bright-green;
-      padding: 10px;
+      background-color: #54BAB9B2;
+      padding: 1em;
+      border-radius: 5px;
 
       .dropdown-content {
-        color: $light-sand;
-        font-size: 16px;
-        text-decoration: none;
-        margin-bottom: 5px;
+        margin-bottom: 1em;
         &:last-child {
           margin-bottom: 0;
         }
@@ -50,11 +53,5 @@
       display: flex;
     }
 
-    .nav-link {
-      color: $light-sand;
-      font-size: 16px;
-      text-decoration: none;
-      cursor: pointer;
-    }
   }
 }
