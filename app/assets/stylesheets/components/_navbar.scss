@@ -5,15 +5,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   .nav-home {
-    margin-left: 5vw;
+    margin-left: 8vw;
   }
 
   .nav-link {
     text-decoration: none;
     color: $light-sand;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
 
     &:hover {
@@ -24,7 +28,7 @@
   .nav-projects-touch {
     position: relative;
     column-gap: 4vw;
-    margin-right: 5vw;
+    margin-right: 8vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

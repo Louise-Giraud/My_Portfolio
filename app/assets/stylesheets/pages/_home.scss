@@ -1,23 +1,118 @@
 // Specific CSS for your home-page
 
 .main-container {
-  margin: 5vw;
+  margin-inline: 8vw;
+  margin-block: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin-top: 8vh;
 
-  .about-card {
+  .intro-card {
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0;
 
-    .about-picture {
-      border: 1px solid black;
-      width: 20vw;
-      height: 20vw;
+    h1 {
+      font-size: 32px;
+      letter-spacing: 0.1rem;
+      letter-spacing: 0.1rem;
+      text-shadow: 4px 4px 1px #FBF8F1;
     }
 
-    .about-text {
-      border: 1px solid black;
+    p {
+      font-size: 18px;
+      font-weight: 600;
     }
   }
+
+  .section-title {
+    background-color: $light-sand;
+    border-radius: 5px;
+
+    h2 {
+      padding: 0.8rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .about-card-hidden {
+    display: flex;
+    flex-direction: column;
+
+      .about-title-picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .about-picture {
+          width: 15rem;
+          height: 15rem;
+          position: relative;
+          z-index: 1;
+          border-radius: 100px;
+
+        }
+
+        .about-section-title {
+          position: absolute;
+          z-index: 2;
+
+          h2 {
+            color: #FBF8F1E5;
+            padding: 0.8rem;
+            letter-spacing: 0.1rem;
+          }
+        }
+
+    }
+  }
+
+  .about-card-full {
+    display: flex;
+    flex-direction: column;
+
+    .about-picture-text {
+      // border: 1px solid black;
+      display: flex;
+      flex-direction: row;
+
+      .about-title-picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .about-picture {
+          width: 15rem;
+          height: 15rem;
+          position: relative;
+          z-index: 1;
+          border-radius: 100px;
+
+        }
+
+        .about-section-title {
+          position: absolute;
+          z-index: 2;
+
+          h2 {
+            color: #FBF8F1E5;
+            padding: 0.8rem;
+            letter-spacing: 0.1rem;
+          }
+        }
+
+      }
+
+      // .about-text {
+      //   border: 1px solid black;
+      // }
+    }
+  }
+
 
   .skills-icon-card {
     display: flex;
