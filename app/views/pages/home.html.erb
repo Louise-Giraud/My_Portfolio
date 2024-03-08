@@ -1,11 +1,11 @@
-<div class="main-container">
+<div class="main-container" data-controller="about-me">
 
   <div class="intro-card">
       <h1>Hi there!</h1>
       <p>Nice to e-meet you. My name is Louise and I'm a Full-Stack Developer.</p>
   </div>
 
-    <div class="about-card-hidden">
+    <div class="about-card-hidden" data-about-me-target="black" data-action="click->about-me#toggle1">
         <div class="about-title-picture">
 
           <div class="about-section-title">
@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="about-card-full">
+    <div class="about-card-full hidden" data-about-me-target="colored" data-action="click->about-me#toggle2">
           <img class="about-picture" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1707947522/IMG_3238_vintage_q2jxsq.jpg">
 
           <div class="about-text">
