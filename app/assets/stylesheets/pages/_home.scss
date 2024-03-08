@@ -68,6 +68,11 @@
             color: #FBF8F1E5;
             padding: 0.8rem;
             letter-spacing: 0.1rem;
+            cursor: pointer;
+
+            &:hover {
+              color: $light-sand;
+            }
           }
         }
 
