@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  margin-top: 8vh;
+  margin-top: 10vh;
 
   .intro-card {
     display: flex;
@@ -19,12 +19,15 @@
       letter-spacing: 0.1rem;
       letter-spacing: 0.1rem;
       text-shadow: 4px 4px 1px #FBF8F1;
+      color: $red
     }
 
     p {
       font-size: 18px;
       font-weight: 600;
+      color: $red;
     }
+
   }
 
   .section-title {
@@ -34,6 +37,7 @@
     h2 {
       padding: 0.8rem;
       letter-spacing: 0.1rem;
+      color: $red;
     }
   }
 
@@ -48,8 +52,8 @@
 
 
         .about-picture {
-          width: 15rem;
-          height: 15rem;
+          width: 15.5rem;
+          height: 15.5rem;
           position: relative;
           z-index: 1;
           border-radius: 100px;
@@ -64,6 +68,11 @@
             color: #FBF8F1E5;
             padding: 0.8rem;
             letter-spacing: 0.1rem;
+            cursor: pointer;
+
+            &:hover {
+              color: $light-sand;
+            }
           }
         }
 
@@ -71,47 +80,31 @@
   }
 
   .about-card-full {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    border: 4px solid $light-sand;
+    background-color: $light-sand;
+    height: 15rem;
+    border-radius: 102px;
 
-    .about-picture-text {
-      // border: 1px solid black;
-      display: flex;
-      flex-direction: row;
-
-      .about-title-picture {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-        .about-picture {
-          width: 15rem;
-          height: 15rem;
-          position: relative;
-          z-index: 1;
-          border-radius: 100px;
-
-        }
-
-        .about-section-title {
-          position: absolute;
-          z-index: 2;
-
-          h2 {
-            color: #FBF8F1E5;
-            padding: 0.8rem;
-            letter-spacing: 0.1rem;
-          }
-        }
-
+      .about-picture {
+        width: 15rem;
+        height: 15rem;
+        position: relative;
+        z-index: 1;
+        border-radius: 100px;
       }
 
-      // .about-text {
-      //   border: 1px solid black;
-      // }
+      .about-text {
+        margin: 0 auto;
+        padding: 3vw;
+
+        p {
+          color: $dark-green;
+        }
+      }
     }
-  }
 
 
   .skills-icon-card {
