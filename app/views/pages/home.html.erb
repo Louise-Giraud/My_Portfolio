@@ -1,10 +1,13 @@
-<div class="main-container" data-controller="about-me">
+<div class="main-container">
 
   <div class="intro-card">
-      <h1>Hi there!</h1>
+    <div data-controller="dynamic-writting" data-dynamic-writting-hi-value="Hi there!">
+      <h1><h1>
+    </div>
       <p>Nice to e-meet you. My name is Louise and I'm a Full-Stack Developer.</p>
   </div>
 
+  <div data-controller="about-me">
     <div class="about-card-hidden" data-about-me-target="black" data-action="click->about-me#toggle1">
         <div class="about-title-picture">
 
@@ -28,61 +31,67 @@
           </div>
 
     </div>
-
-  <div class="skills-card">
-      <div class="section-title">
-        <h2>Skills</h2><h2>⌵</h2>
-      </div>
-
-      <div class="skills-details">
-        <h4>Technical stack:</h4>
-        <div class="skills-icon-card">
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-          <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-          <%# <p>Ruby on Rails, HTML, SCSS, JavaScript, Figma, SQL, Git, Heroku, Cloudinary</p> %>
-        </div>
-        <br>
-        <h4>Other skills:</h4>
-        <p>📝 Project management, content writing and proofreading</p>
-        <p>💡 Creativity, problem-solving, teamwork, self-motivation and attention to details</p>
-      </div>
-
   </div>
 
-  <div class="project-preview-container">
-    <div class="section-title">
-      <h2>My projects</h2><h2>⌵</h2>
+  <div data-controller="skills-projects">
+
+    <div class="skills-card">
+
+        <div class="section-title" data-skills-projects-target="skillsTitle" data-action="click->skills-projects#toggleskills">
+          <h2>Skills</h2><h2>⌵</h2>
+        </div>
+
+        <div class="skills-details" data-skills-projects-target="skillsDetails">
+          <h4>Technical stack:</h4>
+          <div class="skills-icon-card">
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+            <img class="skills-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+            <%# <p>Ruby on Rails, HTML, SCSS, JavaScript, Figma, SQL, Git, Heroku, Cloudinary</p> %>
+          </div>
+          <br>
+          <h4>Other skills:</h4>
+          <p>📝 Project management, content writing and proofreading</p>
+          <p>💡 Creativity, problem-solving, teamwork, self-motivation and attention to details</p>
+        </div>
+
     </div>
 
-    <div class="project-preview-grid">
+    <div class="project-preview-container">
 
-      <%= link_to cultureweb_path do %>
-    <div class="project-preview-card">
-      <h2 class="project-preview-title">CultureWeb</h2>
-      <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010335/CultureWeb_preview-16-9_iglmht.jpg" alt="CultureWeb">
-      <p>See more 👀</p>
+      <div class="section-title" data-skills-projects-target="projectsTitle" data-action="click->skills-projects#toggleprojects">
+        <h2>My projects</h2><h2>⌵</h2>
+      </div>
+
+      <div class="project-preview-grid" data-skills-projects-target="projectsDetails">
+
+        <%= link_to cultureweb_path do %>
+      <div class="project-preview-card">
+        <h2 class="project-preview-title">CultureWeb</h2>
+        <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010335/CultureWeb_preview-16-9_iglmht.jpg" alt="CultureWeb">
+        <p>See more 👀</p>
+      </div>
+      <% end %>
+
+        <%= link_to amazing_venues_path do %>
+      <div class="project-preview-card">
+        <h2 class="project-preview-title">Amazing Venues</h2>
+        <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010352/new_amazing-venues_f3oi4s.png" alt="AmazingVenues">
+        <p>See more 👀</p>
+      </div>
+      <% end %>
+
+      </div>
+
     </div>
-    <% end %>
-
-      <%= link_to amazing_venues_path do %>
-    <div class="project-preview-card">
-       <h2 class="project-preview-title">Amazing Venues</h2>
-      <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010352/new_amazing-venues_f3oi4s.png" alt="AmazingVenues">
-      <p>See more 👀</p>
-    </div>
-    <% end %>
-
-    </div>
-
   </div>
 
 </div>
