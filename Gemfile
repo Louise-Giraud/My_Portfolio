@@ -76,3 +76,4 @@ group :test do
 end
 
 gem "cloudinary"
+gem 'typedjs-rails', '~> 1.0', '>= 1.0.3'
