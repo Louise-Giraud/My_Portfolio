@@ -1,0 +1,41 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+  font-size 32px,
+}
+
+.project-page-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  border: 2px solid $light-sand;
+  padding: 2vw;
+  border-radius: 10px;
+
+  .project-page-text {
+
+    a {
+      color: black;
+    }
+
+      img {
+        height: 1.5rem;
+        padding-inline: 0.5rem;
+      }
+  }
+
+  .project-page-pictures {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+    img {
+    height: 65vh;
+    border-radius: 10px;
+    }
+  }
+}
