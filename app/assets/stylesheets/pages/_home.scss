@@ -35,6 +35,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .about-card-hidden {
@@ -70,7 +74,7 @@
 
             &:hover {
               color: white;
-              font-size: 25px;
+              font-size: 26px;
             }
           }
         }
