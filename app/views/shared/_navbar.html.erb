@@ -1,13 +1,15 @@
 <div class="navbar-style">
   <div class="nav-home">
-    <a class="nav-link">Home</a>
+    <%= link_to "Home", root_path, class:"nav-link" %>
   </div>
   <div class="nav-projects-touch">
-    <div class="dropdown">
-      <a class="nav-link dropdown-content" href="#"><%= link_to "CultureWeb", cultureweb_path, class:"nav-link" %></a>
-      <a class="nav-link dropdown-content" href="#"><%= link_to "Amazing Venues", amazing_venues_path, class:"nav-link" %></a>
+    <div class="nav-project">
+      <div class="dropdown">
+        <a class="nav-link dropdown-content" href="#"><%= link_to "CultureWeb", cultureweb_path, class:"nav-link" %></a>
+        <a class="nav-link dropdown-content" href="#"><%= link_to "Amazing Venues", amazing_venues_path, class:"nav-link" %></a>
+      </div>
+      <a class="nav-link" href="#">My projects</a>
     </div>
-    <a class="nav-link" href="#">My projects</a>
-    <a class="nav-link" href="#">Get in touch</a>
+    <%= link_to "Get in touch", contact_path, class:"nav-link" %>
   </div>
 </div>
