@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   get "cultureweb", to: "pages#cultureweb"
   get "amazing_venues", to: "pages#amazing_venues"
+  get "contact", to: "pages#contact"
 end
