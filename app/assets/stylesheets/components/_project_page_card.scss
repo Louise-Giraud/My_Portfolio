@@ -1,0 +1,77 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+  font-size 32px;
+
+  &:hover {
+    font-size: 28px;
+  }
+}
+
+.project-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5vw;
+  border: 2px solid $light-sand;
+  padding: 2vw;
+  border-radius: 10px;
+
+  .links-logo {
+    a {
+      color: black;
+    }
+
+    img {
+      height: 1.5rem;
+      padding-inline: 0.5rem;
+
+      &:hover {
+        height: 1.7rem;
+      }
+    }
+  }
+
+  .project-page-pictures {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+
+    .carousel-arrow-left {
+      opacity: 0;
+      margin-top: 32vh;
+      background-color: $bright-green;
+      box-shadow: 0px 0px 3px 1px $light-sand;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      justify-content: center;
+      border-radius: 150px;
+      font-size: 20px;
+      color: $light-sand;
+      z-index: 4;
+      margin-right: -5px;
+      cursor: pointer;
+    }
+
+    .carousel-arrow-right {
+      opacity: 1;
+      margin-top: 32vh;
+      background-color: $bright-green;
+      box-shadow: 0px 0px 3px 1px $light-sand;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      justify-content: center;
+      border-radius: 150px;
+      font-size: 20px;
+      color: $light-sand;
+      z-index: 4;
+      margin-left: -5px;
+      cursor: pointer;
+    }
+  }
+}
