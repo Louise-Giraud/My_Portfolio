@@ -1,11 +1,10 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["onetwo", "threefour", "fivesix", "arrowright", "arrowleft" ]
+  static targets = ["onetwo", "threefour", "fivesix", "arrowright", "arrowleft"]
 
   connect() {
-    console.log("hello carousel")
-    console.log(this.onetwoTarget)
+    console.log("hello cw carousel 🎠")
   }
 
   slideright() {
@@ -19,9 +18,9 @@ export default class extends Controller {
     } else if (this.threefourTarget.classList.contains('visible')) {
       this.threefourTarget.classList.remove('visible');
       this.threefourTarget.classList.add('hidden')
-      this.fivesixTarget.style.opacity = '1';
+      this.fivesixTarget.classList.remove('hidden')
+      this.fivesixTarget.classList.add('visible')
       this.arrowrightTarget.style.opacity = "0";
-      this.arrowleftTarget.style.opacity = "1";
     }
   }
 
@@ -33,10 +32,11 @@ export default class extends Controller {
       this.onetwoTarget.classList.add('visible')
       this.arrowleftTarget.style.opacity = "0";
 
-    } else if (this.fivesixTarget.style.opacity === '1') {
-      this.fivesixTarget.style.opacity = '0';
+    } else if (this.fivesixTarget.classList.contains('visible')) {
+      this.fivesixTarget.classList.remove('visible')
+      this.fivesixTarget.classList.add('hidden');
       this.threefourTarget.classList.remove('hidden')
-      this.threefourTarget.classList.add('visible');
+      this.threefourTarget.classList.add('visible')
       this.arrowrightTarget.style.opacity = "1";
     }
   }

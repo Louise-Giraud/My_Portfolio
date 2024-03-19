@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 6;
 
   .nav-home {
     margin-left: 8vw;
@@ -22,7 +22,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $dark-sand;
+      color: white;
     }
   }
 

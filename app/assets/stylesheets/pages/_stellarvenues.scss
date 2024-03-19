@@ -1,0 +1,44 @@
+.carousel-arrow-sv {
+  margin-top: 172px;
+  display: flex;
+
+}
+
+.carousel-arrow-sv.left {
+  opacity: 0;
+  margin-right: -7px;
+}
+
+.carousel-arrow-sv.right {
+  opacity: 1;
+  margin-left: -7px;
+}
+
+.slides-wrapper-sv img {
+  border-radius: 10px;
+  height: 345px;
+  width: 620px;
+}
+
+.slide-one {
+  display: block;
+  position: relative;
+}
+
+.slide-two {
+  display: block;
+  position: relative;
+  margin-top: -345px;
+}
+
+.slide-three {
+  display: block;
+  position: relative;
+  margin-top: -345px;
+}
+
+.slide-four {
+  display: block;
+  position: relative;
+  margin-top: -345px;
+}

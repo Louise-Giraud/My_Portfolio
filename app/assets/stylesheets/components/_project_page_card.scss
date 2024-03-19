@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 5vw;
   border: 2px solid $light-sand;
   padding: 2vw;
@@ -40,9 +41,7 @@
     flex-direction: row;
     padding: 1vw;
 
-    .carousel-arrow-left {
-      opacity: 0;
-      margin-top: 32vh;
+    .carousel-arrow {
       background-color: $bright-green;
       box-shadow: 0px 0px 3px 1px $light-sand;
       height: 30px;
@@ -52,26 +51,18 @@
       border-radius: 150px;
       font-size: 20px;
       color: $light-sand;
-      z-index: 4;
-      margin-right: -5px;
-      cursor: pointer;
-    }
-
-    .carousel-arrow-right {
-      opacity: 1;
-      margin-top: 32vh;
-      background-color: $bright-green;
-      box-shadow: 0px 0px 3px 1px $light-sand;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      justify-content: center;
-      border-radius: 150px;
-      font-size: 20px;
-      color: $light-sand;
-      z-index: 4;
-      margin-left: -5px;
+      z-index: 5;
       cursor: pointer;
     }
   }
+}
+
+.visible {
+  opacity: 1;
+  z-index: 4;
+}
+
+.hidden {
+  opacity: 0;
+  z-index: 0;
 }
