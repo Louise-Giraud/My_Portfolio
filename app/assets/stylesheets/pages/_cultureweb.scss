@@ -1,120 +1,46 @@
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24,
-  font-size 32px;
-
-  &:hover {
-    font-size: 28px;
-  }
-}
-
-.project-page-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5vw;
-  border: 2px solid $light-sand;
-  padding: 2vw;
-  border-radius: 10px;
-
-  .links-logo {
-    a {
-      color: black;
-    }
-
-    img {
-      height: 1.5rem;
-      padding-inline: 0.5rem;
-
-      &:hover {
-        height: 1.7rem;
-      }
-    }
-  }
-
-  .project-page-pictures {
-    display: flex;
-    flex-direction: row;
-    padding: 1vw;
-
-    .carousel-arrow-left {
-      opacity: 0;
-      margin-top: 32vh;
-      background-color: $bright-green;
-      box-shadow: 0px 0px 3px 1px $light-sand;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      justify-content: center;
-      border-radius: 150px;
-      font-size: 20px;
-      color: $light-sand;
-      z-index: 4;
-      margin-right: -5px;
-      cursor: pointer;
-    }
-
-    .carousel-arrow-right {
-      opacity: 1;
-      margin-top: 32vh;
-      background-color: $bright-green;
-      box-shadow: 0px 0px 3px 1px $light-sand;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      justify-content: center;
-      border-radius: 150px;
-      font-size: 20px;
-      color: $light-sand;
-      z-index: 4;
-      margin-left: -5px;
-      cursor: pointer;
-    }
-
-
-
-    img {
+.slides-wrapper-cw {
+  img {
     height: 64vh;
     border-radius: 10px;
     width: 260px;
-    }
-
-    .slides-one-two {
-      display: flex;
-      flex-direction: row;
-      gap: 1vw;
-      position: absolute;
-    }
-
-    .slides-three-four {
-      display: flex;
-      flex-direction: row;
-      gap: 1vw;
-      position: relative;
-    }
-
-    .slides-five-six {
-      display: flex;
-      flex-direction: row;
-      gap: 1vw;
-      z-index: 2;
-      position: relative;
-      margin-block-start: -64vh;
-      opacity: 0;
-    }
   }
 
-  .visible {
-    opacity: 1;
-    z-index: 3;
+  .slides-one-two {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 1vw;
   }
 
-  .hidden {
-    opacity: 0;
-    z-index: 0;
+  .slides-three-four {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 1vw;
   }
+
+  .slides-five-six {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 1vw;
+    // z-index: 2;
+    margin-block-start: -64vh;
+    // opacity: 0;
+  }
+}
+
+.carousel-arrow-cw {
+  display: flex;
+  margin-top: 32vh;
+}
+
+.carousel-arrow-cw.left {
+  opacity: 0;
+  margin-right: -5px;
+}
+
+.carousel-arrow-cw.right {
+  opacity: 1;
+  margin-left: -5px;
 }
