@@ -77,3 +77,4 @@ end
 
 gem "cloudinary"
 gem 'typedjs-rails', '~> 1.0', '>= 1.0.3'
+gem 'mail_form'

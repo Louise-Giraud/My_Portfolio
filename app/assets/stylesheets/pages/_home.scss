@@ -1,5 +1,4 @@
 // Specific CSS for your home-page
-
 .main-container {
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
       font-weight: 600;
       color: $red;
     }
-
   }
 
   .section-title {
@@ -35,22 +33,18 @@
     }
   }
 
-    h2 {
-      padding-inline: 1.5rem;
-
-
+  h2 {
+    padding-inline: 1.5rem;
   }
 
   .about-card-hidden {
     display: flex;
     flex-direction: column;
 
-
     .about-title-picture {
       display: flex;
       justify-content: center;
       align-items: center;
-
 
       .about-picture {
         width: 15.5rem;
@@ -66,24 +60,23 @@
         }
       }
 
-        .about-section-title {
-          position: absolute;
-          z-index: 2;
+      .about-section-title {
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+
+        h2 {
+          color: #FBF8F1E5;
+          padding-inline: 1.5rem;
+          letter-spacing: 0.1rem;
           cursor: pointer;
 
-          h2 {
-            color: #FBF8F1E5;
-            padding-inline: 1.5rem;
-            letter-spacing: 0.1rem;
-            cursor: pointer;
-
-            &:hover {
-              color: $red;
-              font-size: 26px;
-            }
+          &:hover {
+            color: white;
+            font-size: 26px;
           }
         }
-
+      }
     }
   }
 
@@ -97,19 +90,19 @@
     border-radius: 50px;
     cursor: pointer;
 
-      .about-picture {
-        width: 15rem;
-        height: 15rem;
-        position: relative;
-        z-index: 1;
-        border-radius: 50px;
-      }
-
-      .about-text {
-        margin: 0 auto;
-        padding: 3vw;
-      }
+    .about-picture {
+      width: 15rem;
+      height: 15rem;
+      position: relative;
+      z-index: 1;
+      border-radius: 50px;
     }
+
+    .about-text {
+      margin: 0 auto;
+      padding: 3vw;
+    }
+  }
 
 
   .skills-card {
@@ -148,26 +141,25 @@
       margin-top: 3vh;
       }
 
-      .project-preview-card {
-        background-color: $light-sand;
-        box-shadow: 0px 0px 3px 2px #F6728066;
-        width: 25vw;
-        height: 20vw;
-        border-radius: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+    .project-preview-card {
+      background-color: $light-sand;
+      box-shadow: 0px 0px 3px 2px #F6728066;
+      width: 25vw;
+      height: 20vw;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
 
-        .project-preview-pic {
-          width: 20vw;
-          border-radius: 5px;
+      .project-preview-pic {
+        width: 20vw;
+        border-radius: 5px;
 
-          &:hover {
-            width: 21vw;
-          }
+        &:hover {
+          width: 21vw;
         }
       }
+    }
   }
-
 }
