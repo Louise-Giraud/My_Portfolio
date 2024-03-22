@@ -1,6 +1,30 @@
-// .alert {
+.alert.alert-notice {
+  position: fixed;
+  z-index: 1000;
+  display: block;
+  margin-top: 40vw;
+  background-color: #54BAB9;
+  padding: 6vh 4vw;
+  color: $light-sand;
+  border: 2px solid $light-sand;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+
+// .alert.alert.alert {
 //   position: fixed;
-//   bottom: 16px;
-//   right: 16px;
 //   z-index: 1000;
+//   display: block;
+//   margin-left: 32vw;
+//   margin-top: 15vw;
+//   background-color: $red;
+//   padding: 6vh 4vw;
+//   color: $light-sand;
+//   border: 2px solid $light-sand;
+//   border-radius: 10px;
+//   font-size: 18px;
+//   opacity: 0.5;
+//   transition: opacity 1s;
 // }

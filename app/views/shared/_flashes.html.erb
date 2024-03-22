@@ -1,0 +1,10 @@
+<%#  %>
+
+  <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>">
+      <%= message %>
+      <button type="button" class="btn-close" aria-label="Close" onclick="this.parentElement.style.display='none';">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% end %>
