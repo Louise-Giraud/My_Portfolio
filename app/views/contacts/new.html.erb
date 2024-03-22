@@ -1,0 +1,28 @@
+<div class="contact-container">
+  <h1>Write me a message</h1>
+  <p>or a love letter 👀...</p><br>
+
+  <%= form_for @contact do |f| %>
+    <div class="contact-form">
+      <%= f.label :name %></br>
+      <%= f.text_field  :name, required: true, class: "contact-form-text-area name" %></br>
+
+      <%= f.label :email %></br>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area email" %></br>
+
+      <%= f.label :message %></br>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area message"%></br>
+
+      <div class= "hidden-field">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+
+      <%= f.submit 'Send message', class: "button" %>
+    </div>
+  <% end %>
+
+  <div class="text-lkIn">
+    <p>If you're not a fan of forms, you can also reach out to me on <a href="https://www.linkedin.com/in/louisegiraud/">LinkedIn</a>.</p>
+  </div>
+</div>

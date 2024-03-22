@@ -1,0 +1,78 @@
+.hidden-field {
+  display: none;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #FBF8F1;
+  padding: 2vw;
+  border-radius: 10px;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .contact-form {
+    margin-block: 3vh;
+    color: $grey;
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    .contact-form-text-area {
+      width: 50vw;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      border: 1px solid $light-sand;
+      border-radius: 5px;
+      background-color: $light-sand;
+    }
+
+    .contact-form-text-area.name {
+      height: 3vh;
+    }
+
+    .contact-form-text-area.email {
+      height: 3vh;
+    }
+
+    .contact-form-text-area.message {
+      height: 15vh;
+    }
+
+    .button {
+      margin-top: 1vh;
+      font-family: "PT Sans", sans-serif;
+      background-color: $light-sand;
+      border: 1px solid $red;
+      color: $red;
+      padding: 0.5em;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $red;
+        color: $light-sand;
+      }
+    }
+  }
+
+  .text-lkIn {
+    font-size: 17px;
+
+    a {
+      text-decoration: none;
+      color: $bright-green;
+      font-weight: 600;
+
+      &:hover {
+        background-color: $light-sand;
+        border-radius: 5px;
+      }
+    }
+  }
+}

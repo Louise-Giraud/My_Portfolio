@@ -1,6 +1,39 @@
-// .alert {
-//   position: fixed;
-//   bottom: 16px;
-//   right: 16px;
-//   z-index: 1000;
-// }
+.alert {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  margin-top: 40vw;
+  color: $light-sand;
+  border: 2px solid $light-sand;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0.5;
+
+  .text {
+    display: flex;
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+    padding-inline: 4vw;
+  }
+
+  .btn-close {
+    display: flex;
+    align-self: self-end;
+    color: $light-sand;
+    border: none;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.alert.alert-notice {
+  background-color: #54BAB9;
+}
+
+.alert.alert-alert {
+  background-color: #fa7280d9;
+}
