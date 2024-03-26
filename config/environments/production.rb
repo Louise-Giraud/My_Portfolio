@@ -96,10 +96,10 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   ActionMailer::Base.smtp_settings = {
-    :port           => ENV['587'],
-    :address        => ENV['smtp.mailgun.org'],
-    :user_name      => ENV['postmaster@louise-giraud.com'],
-    :password       => ENV['76485ec312af73f66ab0fdd3f48c828e-f68a26c9-5a2f99e2'],
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
     :domain         => 'louise-giraud.com',
     :authentication => :plain,
     :enable_starttls_auto => true  # Make sure this line is present for TLS/STARTTLS
