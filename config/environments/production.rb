@@ -96,10 +96,10 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   ActionMailer::Base.smtp_settings = {
-  :port           => ENV['MAILGUN_SMTP_PORT'],
-  :address        => ENV['MAILGUN_SMTP_SERVER'],
-  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+  :port           => ENV['25'],
+  :address        => ENV['smtp.eu.mailgun.org'],
+  :user_name      => ENV['postmaster@louise-giraud.com'],
+  :password       => ENV['58145db0f4dfbf2236a95fe068fcd9ff-f68a26c9-45a710df'],
   :domain         => 'louise-giraud.com/',
   :authentication => :plain,
 
