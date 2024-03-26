@@ -23,9 +23,9 @@ class ContactsController < ApplicationController
 
   def send_email_via_mailgun(contact)
     api_key = ENV['MAILGUN_API_KEY']
-    domain_name = 'louise-giraud'
+    domain_name = 'louise-giraud.com'
 
-    url = URI("https://api.mailgun.net/v3/#{domain_name}/messages")
+    url = URI("https://api.eu.mailgun.net/v3/#{domain_name}")
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true
 
