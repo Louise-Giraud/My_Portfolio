@@ -73,20 +73,28 @@
 
       <div class="project-preview-grid" data-skills-projects-target="projectsDetails">
 
-        <%= link_to cultureweb_path do %>
-      <div class="project-preview-card">
-        <h2 class="project-preview-title">CultureWeb</h2>
-        <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010335/CultureWeb_preview-16-9_iglmht.jpg" alt="CultureWeb">
-        <p>See more 👀</p>
-      </div>
+      <%= link_to cultureweb_path do %>
+        <div class="project-preview-card">
+          <h2 class="project-preview-title">CultureWeb</h2>
+          <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010335/CultureWeb_preview-16-9_iglmht.jpg" alt="CultureWeb">
+          <p>See more 👀</p>
+        </div>
       <% end %>
 
-        <%= link_to stellar_venues_path do %>
-      <div class="project-preview-card">
-        <h2 class="project-preview-title">stellarvenues.com</h2>
-        <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010352/new_amazing-venues_f3oi4s.png" alt="AmazingVenues">
-        <p>See more 👀</p>
-      </div>
+      <%= link_to stellar_venues_path do %>
+        <div class="project-preview-card">
+          <h2 class="project-preview-title">stellarvenues.com</h2>
+          <img class="project-preview-pic" src="https://res.cloudinary.com/dnx58st8e/image/upload/v1708010352/new_amazing-venues_f3oi4s.png" alt="AmazingVenues">
+          <p>See more 👀</p>
+        </div>
+      <% end %>
+
+      <%= link_to lovr_path do %>
+        <div class="project-preview-card">
+          <h2 class="project-preview-title">LOV+R</h2>
+          <%= cl_image_tag 'lovr_preview_dptmcj', class:"project-preview-pic" %>
+          <p>See more 👀</p>
+        </div>
       <% end %>
 
       </div>

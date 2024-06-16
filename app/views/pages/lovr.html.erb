@@ -1,0 +1,48 @@
+<div class="project-page-container">
+  <div class="project-page-text">
+    <h1>LOVR+R</h1>
+      <br>
+
+    <h2>What is it?</h2>
+    <p><a href="https://wearelovr.com" target="_blank"><strong>LOV+R</strong></a> is a web-based booking platform designed to transform festivals into unforgettable, love-filled experiences. This innovative platform allows festival organizers to set up Love Pods, unique spaces that can be added to any festival.</p>
+    <p><strong>Key features:</strong></p>
+    As a user (festival guest)
+    <ul>
+      <li>I can book a free love pod at the festival I'm attending</li>
+      <li>I can see my bookings details and delete them</li>
+    </ul>
+    As an admin
+    <ul>
+      <li>I can add new festivals and love pods to the app</li>
+      <li>I can update festivals and love pods details or delete them</li>
+      <li>I can see all the bookings and delete them</li>
+    </ul>
+
+    <h2>How I made it?</h2>
+      <p>The app is build with Ruby on Rails, HTML5, SCSS, Cloudinary, Heroku, postgreSQL and has a Stripe integrated payment system.</p>
+    <br>
+
+    <div class="links-logo">
+      <a href="" target="_blank"><span class="material-symbols-outlined">open_in_new</span></a>
+      <a href="https://github.com/LuisaStaiger/lovr_booking_app" target="_blank"><img src="https://res.cloudinary.com/dnx58st8e/image/upload/v1710425287/github-mark_zk63wk.png" alt=""></a>
+    </div>
+  </div>
+
+  <div class="project-page-pictures" data-controller="carousel-lr">
+    <span class="carousel-arrow carousel-arrow-lr left" data-action="click->carousel-lr#slideleft" data-carousel-lr-target="arrowleft">←</span>
+
+    <div class="slides-wrapper-lr">
+      <div class="slides-one-two visible" data-carousel-lr-target="onetwo">
+        <%= cl_image_tag('1_w2chlq') %>
+        <%= cl_image_tag('2_fgufrv') %>
+      </div>
+
+      <div class="slides-three-four" data-carousel-lr-target="threefour">
+        <%= cl_image_tag('3_fkafnl') %>
+        <%= cl_image_tag('4_ju7aps') %>
+      </div>
+    </div>
+
+     <span class="carousel-arrow carousel-arrow-lr right" data-action="click->carousel-lr#slideright" data-carousel-lr-target="arrowright">→</span>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.slides-wrapper-lr {
+  img {
+    height: 60vh;
+    border-radius: 10px;
+    width: 260px;
+  }
+
+  .slides-one-two {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 1vw;
+  }
+
+  .slides-three-four {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 1vw;
+    // z-index: 2;
+    // opacity: 0;
+  }
+}
+
+.carousel-arrow-lr {
+  display: flex;
+  margin-top: 32vh;
+}
+
+.carousel-arrow-lr.left {
+  opacity: 0;
+  margin-right: -5px;
+}
+
+.carousel-arrow-lr.right {
+  opacity: 1;
+  margin-left: -5px;
+}
