@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   get "cultureweb", to: "pages#cultureweb"
   get "stellar_venues", to: "pages#stellar_venues"
+  get "lov+r", to: "pages#lov+r"
   get "contact", to: "pages#contact"
 
   resources :contacts, only: [:new, :create]
